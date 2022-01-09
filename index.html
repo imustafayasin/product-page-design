@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <div class="lightbox">
+    <img class="close" src="/images/icon-close.svg" alt="">
+  </div>
+  <div class="container">
+    <header class="d-flex">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="">
+      </div>
+      <div class="menu">
+        <ul class="d-flex">
+          <li>
+            <a href=" #">Collections</a>
+          </li>
+          <li>
+            <a href="#">Men</a>
+          </li>
+          <li>
+            <a href="#">Women</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-icons d-flex">
+        <div class="cart" tabindex="-1">
+          <img src="/images/icon-cart.svg" alt="">
+          <div class="basket">
+            <div class="head"><b>Cart</b></div>
+            <div class="content empty">
+              Your cart is empty.
+            </div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="/images/image-avatar.png" alt="">
+        </div>
+      </div>
+    </header>
+
+
+    <main class="d-flex">
+      <div class="product-images">
+        <div class="main-image"><img src="/images/image-product-1.jpg" alt="">
+          <div class="slider-arrow">
+            <button class="arrow prev">
+              <img src="/images/icon-previous.svg" alt="" srcset="">
+            </button>
+            <button class="arrow next">
+              <img src="/images/icon-next.svg" alt="" srcset="">
+            </button>
+          </div>
+        </div>
+        <div class="thumbnails d-flex">
+          <div class="thumbnail"><img src="/images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="thumbnail"><img src="/images/image-product-2-thumbnail.jpg" alt=""></div>
+          <div class="thumbnail"><img src="/images/image-product-3-thumbnail.jpg" alt=""></div>
+          <div class="thumbnail"><img src="/images/image-product-4-thumbnail.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <div class="vendor">SNEAKER COMPANY</div>
+        <div class="title">
+          <h2>Fall Limited Edition Sneakers</h2>
+        </div>
+        <div class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable
+          rubber
+          ouer sole, they'll withstand everything the weather can offer
+        </div>
+        <div class="price">
+          <div class="main d-flex"><span>$125.00</span>
+            <div class="badge">50%</div>
+            </span>
+          </div>
+          <div class="compare">$250.00</div>
+        </div>
+
+        <div class="actions d-flex">
+          <div class="qty d-flex">
+            <button onclick="this.nextElementSibling.stepDown()"><img src="/images/icon-minus.svg" alt=""
+                srcset=""></button>
+            <input min="1" value="1" type="number">
+            <button onclick="this.previousElementSibling.stepUp()"><img src="/images/icon-plus.svg" alt=""
+                srcset=""></button>
+          </div>
+          <button class="add-to-cart d-flex">
+            <img src="/images/icon-cart.svg" alt="">
+            Add to cart
+          </button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
